@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: chatroom
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -k eventlet -w 1 app:app
