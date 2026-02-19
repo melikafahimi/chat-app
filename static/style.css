@@ -1,0 +1,37 @@
+/* استایل بادج (همون عدد قرمز) */
+.unread-badge {
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    animation: pulse 1s infinite;
+}
+
+/* انیمیشن چشمک زدن */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #ff6666;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* تنظیم display: flex برای بخش بالای اسم کاربر */
+.user-info > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
